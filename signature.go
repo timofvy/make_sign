@@ -82,7 +82,6 @@ func Signature(txData string) error {
 	} else {
 		data, err = hex.DecodeString(txData[2:]) // remove the "0x" prefix
 		if err != nil {
-			log.Println(11111111, err)
 			return err
 		}
 	}
